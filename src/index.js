@@ -1,10 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+// import Menu from './components/Menu';
+// import data from './data/recipes';
+// import AddColorForm from './components/AddColorForm';
+import StarRating from './components/StarRating';
+import './style.css';
+
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// const logColor = (title, color) =>
+//   console.log(`New Color: ${title} | ${color}`);
+
+ReactDOM.render(<StarRating totalStars={7} starsSelected={3} />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
