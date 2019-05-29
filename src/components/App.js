@@ -7,7 +7,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      color: []
+      colors: []
     }
     this.addColor = this.addColor.bind(this);
     this.rateColor = this.rateColor.bind(this);
@@ -15,7 +15,7 @@ class App extends Component {
   }
 
   addColor(title, color) {
-    const colors = [
+    const colorsArr = [
       ...this.state.colors,
       {
         id: v4(),
@@ -24,7 +24,7 @@ class App extends Component {
         rating: 0
       }
     ]
-    this.setState(colors);
+    this.setState({colors: colorsArr});
   }
 
   rateColor(id, rating) {

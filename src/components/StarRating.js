@@ -10,6 +10,7 @@ const StarRating = ({starsSelected=0, totalStars=5, onRate=f=>f}) =>
             onClick={() => onRate(i+1)}
       />
     )}
+    <p>{starsSelected} of {totalStars} stars</p>
   </div>
 
 // class StarRating extends Component {

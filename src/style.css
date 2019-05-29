@@ -15,3 +15,7 @@
 .star + p {
   clear:both;
 }
+
+.color {
+  height: 2em;
+}
